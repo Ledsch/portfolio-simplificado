@@ -2,178 +2,268 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Medeiros Schmidt - Desenvolvedor Frontend</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoRotas: Transformando o Descarte Consciente em Ação Climática Digital</title>
+  <meta name="description"
+    content="Informações sobre reciclagem, dias de coleta seletiva e coleta comum da sua cidade. Baixe os PDFs oficiais.">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/responsivo.css">
+  <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a href="#">
-            <h1 class="logo">LS</h1>
-        </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="./src/img/favicon-32x32.png" alt="Ícone de reciclagem">
+        <span>EcoRotas</span>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-reciclar">Como separar</a>
+        <a href="#calendarios">Calendários</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="mobileMenu"
+        aria-label="Abrir menu">☰</button>
+    </div>
+    <nav id="mobileMenu" class="mobile-nav" hidden>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-reciclar">Como separar</a>
+      <a href="#calendarios">Calendários</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+  </header>
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#projetos">Meus projetos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="informacoes">
-            <h1>Olá! Sou Leonardo Schmidt</h1>
-            <p>Um desenvolvedor frontend em formação apaixonado por tecnologia e suas inovações.</p>
-            <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de compartilhar meus conhecimentos.😁 </p>
-            <p>Ah, gosto de animes, ler livros no meu tempo livre e sou uma pessoa que gosta de fazer musculação💜 </p>
-
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://br.linkedin.com/" title="Ir para o linkedin" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://wa.me/5547997056096" title="Enviar Mensagem no WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/Ledsch" title="Ir para o GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com/leomschh/" title="Ir para o Instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Recicle hoje para um <span class="highlight">amanhã melhor</span>.</h1>
+          <p>Veja os dias de coleta seletiva e comum da sua região e baixe os PDFs oficiais para salvar no celular.</p>
+          <div class="cta">
+            <a class="btn primary" href="#calendarios">Ver calendários</a>
+            <a class="btn" href="#como-reciclar">Aprender a separar</a>
+          </div>
         </div>
-
-        <div class="cotainder-foto">
-            <div class="foto sombra-interna">
-                <img src="./src/imagens/foto-perfil2.png" alt="foto do porfólio do Leonardo">
-            </div>
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sfa-jnXtA84?si=oKAD_eyJ9JLkQpD1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </section>
-    <section class="projetos" id="projetos">
-        <h2 class="titulo">Meus projetos</h2>
-
-        <div class="container-projetos">
-            <div class="projeto">
-                <a href="https://ledsch.github.io/magick-ai/" target="_blank">
-                    <img src="./src/imagens/projeto-magickai.png" alt="`Capa do projeto Magick-Ai">
-                    <h3>Projeto 1 - Magick-Ai</h3>
-
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href=# target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 2</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 3</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 4</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 5</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 6</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 7</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://placehold.co/517x700" alt="`Capa do projeto">
-                    <h3>Projeto 8</h3>
-                    <div class="infomacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <button class="btn-mostra-projetos">Mostra mais</button>
+      </div>
     </section>
 
-    <script src="./src/js/index.js"></script>
+    <section id="sobre" class="section container">
+      <h2>Sobre</h2>
+      <p>A reciclagem é um passo crucial em direção a um futuro mais sustentável e saudável para o nosso planeta. Diariamente, produzimos toneladas de resíduos que, se não descartados corretamente, contribuem para a poluição, esgotamento de recursos naturais e mudanças climáticas. Reciclar é mais do que um ato ambientalmente responsável; é um compromisso com a redução do desperdício, a economia de energia e a conservação dos recursos preciosos da Terra. Ao adotar práticas de reciclagem, não apenas diminuímos a quantidade de resíduos enviados para aterros, mas também promovemos a revalorização de materiais, geramos empregos e impulsionamos o desenvolvimento de novas tecnologias sustentáveis. Junte-se a nós nesta jornada para transformar o nosso ambiente e garantir um legado positivo para as gerações futuras.</p>
 
+      <img class="reciclado" src="./src/img/materias-reciclaveis (3).png" alt="">
+    </section>
+
+    <section id="como-reciclar" class="section container cards">
+      <article class="card">
+        <h3>Recicláveis</h3>
+        <ul class="checklist">
+          <li>Papel e papelão (limpos e secos)</li>
+          <li>Plásticos (garrafas, embalagens)</li>
+          <li>Metais (latas de alumínio, aço)</li>
+          <li>Vidros (garrafas, potes — bem embalados)</li>
+        </ul>
+        <p class="note">Dica: lave e seque as embalagens para evitar odores e insetos.</p>
+      </article>
+      <article class="card">
+        <h3>Não recicláveis</h3>
+        <ul class="checklist">
+          <li>Papéis engordurados ou muito sujos</li>
+          <li>Espelhos, porcelanas, cerâmicas</li>
+          <li>Fraldas, absorventes e restos orgânicos</li>
+          <li>Madeiras tratadas, cabos de aço</li>
+        </ul>
+        <p class="note">Orgânicos podem virar adubo através da compostagem.</p>
+      </article>
+      <article class="card">
+        <h3>Especiais</h3>
+        <ul class="checklist">
+          <li>Eletrônicos e pilhas (pontos de coleta)</li>
+          <li>Óleo de cozinha (armazenar e entregar)</li>
+          <li>Medicamentos vencidos (farmácias)</li>
+        </ul>
+        <p class="note">Para descate de eletrônicos var para Ecoponto Centro na R. Arnaldo Passos, 298 - Centro,
+          Navegantes - SC.</p>
+      </article>
+    </section>
+
+    <section id="calendarios" class="section container">
+      <h2>Calendários de coleta</h2>
+      <div class="grid-2">
+        <article class="card calendar">
+          <header class="calendar-header">
+            <h3>Coleta Seletiva</h3>
+            <a class="btn small" href="./src/docum/coleta_seletiva.pdf" download>Baixar PDF</a>
+          </header>
+          <p>Confira os dias de coleta de recicláveis por bairro/região:</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Bairro / Região</th>
+                  <th>Dias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Segunda</td>
+                </tr>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Terça</td>
+                </tr>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Quarta</td>
+                </tr>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Quinta</td>
+                </tr>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Sexta</td>
+                </tr>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Sábado</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card calendar">
+          <header class="calendar-header">
+            <h3>Coleta Convencional</h3>
+            <a class="btn small" href="./src/docum/coleta-convencional.pdf" download>Baixar PDF</a>
+          </header>
+          <p>Dias de coleta de resíduos não recicláveis:</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Bairro / Região</th>
+                  <th>Dias</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Segunda</td>
+                </tr>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Terça</td>
+                </tr>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Quarta</td>
+                </tr>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Quinta</td>
+                </tr>
+                <tr>
+                  <td>São Pedro e Centro</td>
+                  <td>Sexta</td>
+                </tr>
+                <tr>
+                  <td>Meia Praia e Gravatá</td>
+                  <td>Sábado</td>
+                </tr>
+              </tbody>
+            </table>
+    </section>
+
+    <section id="duvidas" class="section container faq">
+      <h2>Dúvidas frequentes</h2>
+      <details>
+        <summary>Posso misturar vidro com os outros recicláveis?</summary>
+        <p>Evite. O ideal é embalar o vidro separadamente e sinalizar para segurança da equipe de coleta.</p>
+      </details>
+      <details>
+        <summary>Como descartar eletrônicos?</summary>
+        <p>Leve até o Ecoponto Centro na R. Arnaldo Passos, 298 - Centro, Navegantes - SC, 88370-102 </p>
+      </details>
+      <details>
+        <summary>Quais materiais podem ser reciclados?</summary>
+        <p>Papel e papelão (jornais, revistas, caixas)
+        </p>
+        <p>Plásticos (garrafas PET, embalagens diversas)</p>
+        <p>Metais (latas de alumínio, aço)
+          Vidros (garrafas, potes)</p>
+        <p><strong>Mas atenção: resíduos sujos, contaminados com alimentos ou gordura geralmente não são
+            recicláveis.</strong></p>
+      </details>
+      <details>
+        <summary>É preciso lavar as embalagens antes de reciclar?</summary>
+        <p>Sim. Embalagens com resíduos de alimentos ou líquidos devem ser enxaguadas para evitar contaminação, mau cheiro e atração de insetos nos centros de triagem. </p>
+      </details>
+      <details>
+        <summary>Posso reciclar papel higiênico, papel molhado ou engordurado?</summary>
+        <p>Não. Papéis higiênicos, guardanapos usados, papéis com gordura, papel carbono e papel plastificado <strong>não são recicláveis.</strong> </p>
+      </details>
+      <details>
+        <summary>É preciso lavar as embalagens antes de reciclar?</summary>
+        <p>Sim. Embalagens com resíduos de alimentos ou líquidos devem ser enxaguadas para evitar contaminação, mau cheiro e atração de insetos nos centros de triagem. </p>
+      </details>
+      <details>
+        <summary>Onde descarto pilhas, baterias e eletrônicos?</summary>
+        <p>Esses materiais <strong>são resíduos perigosos</strong> e devem ser descartados em pontos de coleta especiais como ecopontos, supermercados ou iniciativas de logística reversa. Nunca jogue no lixo comum..</strong> </p>
+      </details>
+      <details>
+        <summary>Todos os tipos de plástico são recicláveis?</summary>
+        <p>Não. Existem múltiplos tipos de plástico, identificados pelos números de 1 a 7 dentro do símbolo de reciclagem. Nem todos são reciclados no Brasil por falta de tecnologia ou mercado — por exemplo, plásticos tipo 3 (PVC) e tipo 6 (isopor) são mais difíceis.</p>
+      </details>
+      <details>
+        <summary>Por que é importante separar o lixo reciclável do orgânico?</summary>
+        <p>Misturar resíduos recicláveis com lixo orgânico contamina os materiais e compromete seu reaproveitamento. A separação correta facilita o trabalho de triagem e aumenta as chances de reciclagem.</p>
+      </details>
+      <details>
+        <summary>Posso colocar o lixo reciclável em sacolas plásticas comuns?</summary>
+        <p>O ideal é usar sacolas <strong>transparentes</strong> para facilitar a visualização pelos catadores/cooperativas. Sacolas pretas ou escuras são geralmente confundidas com lixo orgânico. </p>
+      </details>
+      <details>
+        <summary>O que acontece depois que o lixo é reciclado?</summary>
+        <p>O resíduo é coletado, passa por triagem, é separado por tipo e enviado para empresas recicladoras. Lá, ele é processado e transformado em matéria-prima para novos produtos — fechando o ciclo. </p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> • Atividade Extensionista I Tecnologia Aplicada à Inclusão Digita - UNITER RU:
+        1230713 - Leonardo Schmidt</p>
+      <!-- <a class="btn small ghost" href="#topo">Voltar ao topo</a> -->
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile acessível
+    const btn = document.getElementById('menuButton');
+    const mobile = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const open = mobile.hasAttribute('hidden') ? false : true;
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) mobile.setAttribute('hidden', '');
+      else mobile.removeAttribute('hidden');
+    });
+    // Ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
